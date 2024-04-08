@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<studentData>
+<student>
+<roll>272</roll>
+<name>shriram</name>
+<address>Nathachiwadi</address>
+<college>Am college</college>
+<course>BBA(CA)</course>
+</student>
+<student>
+<roll>273</roll>
+<name>ram</name>
+<address>pune</address>
+<college>Am college</college>
+<course>BBA(CA)</course>
+</student>
+</studentData>

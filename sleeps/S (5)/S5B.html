@@ -1,0 +1,42 @@
+<html>
+<head>
+<script>
+function show()
+{
+var t1=document.getElementById('t1').value;
+if(window.XMLHttpRequest)
+{
+xmlhttp=new XMLHttpRequest();
+}
+else
+{
+xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+}
+xmlhttp.onreadystatechange=function()
+{
+if(xmlhttp.readyState==4 && xmlhttp.status==200)
+{
+document.getElementById("t").innerHTML=xmlhttp.responseText;
+}
+}
+var q1="t1="+t1;
+xmlhttp.open("GET","http://localhost/d1.php?"+q1,true);
+
+xmlhttp.send();
+}
+</script>
+</head>
+<body>
+<form method="get" name="frm">
+Enter The Standerd : 
+<input type="text" id="t1">
+<br>
+<br>
+<input type="button" value="ok" onclick="show()">
+<br>
+<br>
+<span id="t">
+</span>
+</form>
+</body>
+</html>
